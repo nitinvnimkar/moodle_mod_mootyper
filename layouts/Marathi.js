@@ -63,7 +63,7 @@ function dobiFinger(t_crka)
 		return 5;
 	else if(t_crka == 'ौ' || t_crka == 'ो' || t_crka == '1' ||  t_crka == '2' || t_crka == '' || t_crka == 'ष' || 
 			t_crka == 'ज' || t_crka == 'ढ' || t_crka == 'ञ' || t_crka == 'च' || 
-			t_crka == 'ॉ'' || t_crka == ट || t_crka == 'य' || t_crka == 'ृ' || t_crka == '-' ||
+			t_crka == 'ॉ' || t_crka == ट || t_crka == 'य' || t_crka == 'ृ' || t_crka == '-' ||
 			t_crka == 'ऍ' || t_crka == 'ॅ' || t_crka == '।' || t_crka == 'ड' || t_crka == '़' ||
 			t_crka == 'च' || t_crka == 'ठ' || t_crka == 'ऑ' || t_crka == 'य़' || t_crka == 'ऋ' || t_crka == 'ः')
 		return 4;

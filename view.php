@@ -180,13 +180,13 @@ for($it=0; $it<strlen($textToEnter); $it++)
 $record = get_last_check($mootyper->id);
 if(is_null($record)){
 echo '<script type="text/javascript">
-	initTextToEnter("'.$textToInit.'", 0, 0, 0, 0, 0, "'.$CFG->wwwroot.'", '.$mootyper->showkeyboard.');
+	initTextToEnter("'.str_replace( array( "\n", "\r" ), array( "\\n", "\\r" ), $textToEnter ).'", 0, 0, 0, 0, 0, "'.$CFG->wwwroot.'", '.$mootyper->showkeyboard.');
 </script>';
 }
 else
 {
 	echo '<script type="text/javascript">
-	initTextToEnter("'.$textToInit.'", 1, '.$record->mistakes.', '.$record->hits.', '.$record->timetaken.', '.$record->attemptid.', "'.$CFG->wwwroot.'", '.$mootyper->showkeyboard.');
+	initTextToEnter("'.str_replace( array( "\n", "\r" ), array( "\\n", "\\r" ), $textToEnter ).'", 1, '.$record->mistakes.', '.$record->hits.', '.$record->timetaken.', '.$record->attemptid.', "'.$CFG->wwwroot.'", '.$mootyper->showkeyboard.');
 	</script>';
 }
 }
